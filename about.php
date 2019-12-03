@@ -138,7 +138,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta name="Content-Script-Type" content="text/javascript">
 <meta name="Content-Style-Type" content="text/css">
-<title>Example</title>
 
 <script type="text/javascript">
 document.write ('<p>Current time : <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
