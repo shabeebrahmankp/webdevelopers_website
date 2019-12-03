@@ -15,7 +15,7 @@ if(isset($_POST['login-btn'])) {
         if(password_verify($password, $hashed_password)) {
           $_SESSION['id'] = $id;
           $_SESSION['username'] = $username;
-          header('location: http://localhost/webdevelopers/loginsignup/admin/index.php');
+          header('location: http://localhost/webdevelopers/loginsignup/dashboard.php');
         }
         else {
           echo "Error: Invalid username or password";
