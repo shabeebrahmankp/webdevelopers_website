@@ -151,6 +151,17 @@ include_once 'source/session.php';
 							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Content-Script-Type" content="text/javascript">
+<meta name="Content-Style-Type" content="text/css">
+
+<script type="text/javascript">
+document.write ('<p>Current time : <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+
 						<p class="copyright">&copy; web developers | All rights reserved</p>
 					</footer>
 
