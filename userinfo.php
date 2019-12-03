@@ -13,7 +13,7 @@ $sql="INSERT INTO userdata (username,email,mobile,comment) VALUES ('$user','$ema
 if($con->query($sql))
 {
     echo "we got it";
-    header( 'Location: http://localhost/new/contact.php' ) ;
+    header( 'Location: http://localhost/webdevelopers/contact.php' ) ;
 }
 else{
     echo "ERROR ;".$sql."<br>".$con->error;
