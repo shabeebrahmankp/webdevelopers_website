@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send your details to us</title>
+    <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+    <div class="header">
+	 
+        <div class="navbar" id='nav'>
+    
+          <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="dashboard.php">Your account</a></li>
+                
+          </ul>
+    
+        </div>
+    
+    </div>
+    
+    <div class="box"></div>
+    
+    
+    <!-- add some javascript code -->
+    
+      <script type="text/javascript">
+          
+           var  nav = document.getElementById('nav');
+         
+         window.onscroll = function(){
+    
+             if (window.pageYOffset >100) {
+    
+                 nav.style.background = "#95d417";
+             }
+             else{
+                 nav.style.background = "transparent";
+                 nav.style.boxShadow = "none";
+             }
+         }
+    
+    
+    
+      </script>
+    
+    
+    
+    <!-- add css style -->
+    
+    <style type="text/css">
+          
+          *{
+              padding: 0px;
+              margin:0px;
+              box-sizing: border-box;
+          }
+    
+          .header{
+               width: 100%;
+               height: 100%;
+               background-size: cover;
+    
+          }
+    
+          .navbar{
+              width: 100%;
+              padding: 20px;
+              position: fixed;
+              top: 0px;
+              text-align: left;
+              transition: .5s;
+          }
+    
+          .navbar ul li{
+              list-style-type: none;
+              display:inline-block;
+              padding: 10px 50px;
+              color: white;
+              font-size: 20px;
+              font-family: sans-serif;
+              cursor: pointer;
+              border-radius:10px;
+              transition: .5s;
+          }
+    
+          .navbar ul li:hover{
+              background: rgb(49, 170, 207);
+          }
+    
+    </style>
+                </header>
+<br><br><br><br><br><br>
+<form action="details.php"method="POST">
+<div class="form-style-5">
+        <fieldset>
+        <legend><span class="number">1</span> About yourself </legend>
+        <input type="text" name="user" placeholder="Your Name *">
+        <input type="email" name="email" placeholder="Your Email *">
+        <input type="text" name="mobile" placeholder="Your contact number *">
+        <input type="text" name="company" placeholder="Your company name/shop name *">
+        <input type="text" name="domain" placeholder="The domain you are expecing for your website(eg: .com , .in )*">
+        <label>Website Type</label>
+        <select name="website_type">
+          <option value="ecommerce">E-commerce Website</option>
+          <option value="business">Business Website</option>
+          <option value="entertainment">Entertainment Website</option>
+          <option value="portfolio">Portfolio Website</option>
+          <option value="media">Media Website</option>
+          <option value="brochure">Brochure Website</option>
+          <option value="educational">Educational Website</option>
+          <option value="nonprofit">Nonprofit Website</option>
+          <option value="infopreneur">Infopreneur Website</option>
+          <option value="personal">Personal Website</option>
+          <option value="portal">Web Portal</option>
+        </select>      
+        </fieldset>
+        <fieldset>
+        <legend><span class="number">2</span> Add more</legend>
+        <textarea name="comment" placeholder="Add your concerns about your website"></textarea>
+        </fieldset>
+        <input type="submit" value="send" />
+        </form>
+        </div>
+        
